@@ -18,6 +18,7 @@ export async function POST(req: Request) {
   const mailOptions = {
     from: process.env.EMAIL_USER,  // Nadawca
     to: 'karoldawidg@gmail.com',  // Adres odbiorcy
+    cc: email, 
     subject: 'Nowe zgłoszenie konferencyjne',
     text: `
       Nowe zgłoszenie konferencyjne:
